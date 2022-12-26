@@ -3,13 +3,22 @@ import React from 'react'
 import './Sidebar.css'
 
 function Sidebar() {
+
+    const recentItem = (topic) => (
+        <div className="sidebar__recentItem">
+            <span className='sidebar__hash'>#</span>
+            <p>{topic}</p>
+        </div>
+    );
+
   return (
+
     //  sidebar container
     <div className='sidebar'>
 
         {/* sidebar top */}
         <div className='sidebar__top'>
-            <img src='' alt=''/>
+            <img src='https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80' alt=''/>
             <Avatar className='sidebar__avatar'/>
             <h2>Edmond Fagbuyi</h2>
             <h4>edmondfagbuyi@gmail.com</h4>
@@ -29,7 +38,12 @@ function Sidebar() {
 
         {/* sidebar bottom */}
         <div className='sidebar__bottom'>
-
+            <p>Recent</p>
+            {recentItem("reactjs")}
+            {recentItem("softwareengineering")}
+            {recentItem("projectmanagement")}
+            {recentItem("scrummaster")}
+            {recentItem("golang")}
         </div>
     </div>
   )
