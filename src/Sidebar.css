@@ -92,3 +92,13 @@
     cursor: pointer;
     color: #000;
 }
+
+.sidebar__hash {
+    margin-right: 10px;
+    margin-left: 5px;
+}
+
+.sidebar__bottom > p {
+    font-size: 13px;
+    padding-bottom: 10px;
+}
